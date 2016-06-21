@@ -1,0 +1,30 @@
+{
+  "name": "three-camera-controller",
+  "version": "0.1.0",
+  "description": "Controller for Three.js camera, based on FlyControls",
+  "main": "lib/ThreeCameraController.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && babel -D src/ --presets es2015 --out-dir lib/",
+    "test": "echo \"No tests...yet :)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewscwei/three-camera-controller.git"
+  },
+  "author": "Andrew Wei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewscwei/three-camera-controller/issues"
+  },
+  "homepage": "https://github.com/andrewscwei/three-camera-controller#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "rimraf": "^2.5.2"
+  },
+  "dependencies": {
+    "stats.js": "^0.16.0",
+    "three": "^0.78.0"
+  }
+}
